@@ -1,4 +1,4 @@
-// Carpeta: models/
+
 class Tarea {
   constructor(id, titulo) {
     this.id = id;

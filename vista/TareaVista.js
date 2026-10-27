@@ -1,4 +1,4 @@
-// Carpeta: views/
+
 class TareaVista {
   constructor() {
     this.formulario = document.getElementById('formulario');

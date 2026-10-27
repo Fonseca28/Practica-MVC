@@ -1,4 +1,4 @@
-// Carpeta: models/
+
 class ListaTareas {
   constructor() {
     this.tareas = [];

@@ -1,4 +1,4 @@
-// Carpeta: controllers/
+
 class TareaController {
   constructor(modelo, vista) {
     this.modelo = modelo;
