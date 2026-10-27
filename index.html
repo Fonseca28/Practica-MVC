@@ -1,0 +1,72 @@
+<!-- Carpeta: views/ -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de tareas MVC</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f4f8;
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+      margin: 0;
+    }
+    .contenedor {
+      background: #fff;
+      width: 100%;
+      max-width: 420px;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+    h1 { margin-top: 0; font-size: 22px; }
+    form { display: flex; gap: 8px; margin-bottom: 16px; }
+    input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccd;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+    button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      background: #3b6cf6;
+      color: #fff;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:hover { background: #2a55d4; }
+    ul { list-style: none; padding: 0; margin: 0; }
+    li {
+      padding: 10px 12px;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+    }
+    li:hover { background: #f7f9ff; }
+    li.completada { text-decoration: line-through; color: #999; }
+    .vacio { color: #999; text-align: center; padding: 12px; }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Gestor de tareas</h1>
+    <form id="formulario">
+      <input type="text" id="titulo" placeholder="Nueva tarea..." required>
+      <button type="submit">Agregar</button>
+    </form>
+    <ul id="lista"></ul>
+  </div>
+
+  <script src="../models/Tarea.js"></script>
+  <script src="../models/ListaTareas.js"></script>
+  <script src="TareaVista.js"></script>
+  <script src="../controllers/TareaController.js"></script>
+  <script src="../controllers/app.js"></script>
+</body>
+</html>
